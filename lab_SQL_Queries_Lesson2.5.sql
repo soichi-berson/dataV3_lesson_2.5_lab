@@ -18,7 +18,7 @@ SELECT max(length) AS 'max_duration', min(length) AS 'min_duration' FROM sakila.
 
 -- 4 What's the average movie duration expressed in format (hours, minutes)?
 SELECT CONCAT(FLOOR(AVG(length)/60), ' hours ', round(AVG(length)%60,0), ' minutes')
- AS 'average of hours' FROM sakila.film; 
+ AS 'average of movie duration' FROM sakila.film; 
 
 -- 5. How many distinct (different) actors' last names are there?
 SELECT COUNT(DISTINCT last_name) FROM actor;
